@@ -1,0 +1,108 @@
+/* Diseño MOOD: cambia apariencia sin reordenar la interfaz. */
+@font-face{font-family:'Mochibop Bold';src:url('../assets/fonts/MochibopBold-Demo.ttf') format('truetype');font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:Montserrat;src:url('../assets/fonts/montserrat-400.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:Montserrat;src:url('../assets/fonts/montserrat-600.ttf') format('truetype');font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:Montserrat;src:url('../assets/fonts/montserrat-700.ttf') format('truetype');font-weight:700;font-style:normal;font-display:swap}
+body{font-family:var(--sans)}
+h1,h2,h3,h4,.price,.menu-banner{font-family:var(--sans);font-weight:700}
+h1 em,h2 em,h3 em,.menu-banner em{font-style:normal}
+.header{background:#fff}.icon-button svg{stroke-width:2.2}
+.button{border-radius:12px;text-transform:uppercase;font-weight:700;letter-spacing:.015em}
+.button.orange{background:var(--orange);color:#fff}
+.button.light{background:#fff;color:var(--teal);box-shadow:inset 0 0 0 2px var(--teal)}
+.button.outline{box-shadow:inset 0 0 0 2px currentColor}
+.header .nav-order{background:var(--teal);color:#fff;border-radius:12px}
+.button:disabled{background:var(--disabled);color:#fff;filter:none}
+@media(hover:hover){.button:not(:disabled):hover{background:var(--brand-hover);filter:none}.button.orange:not(:disabled):hover{background:var(--accent-hover);color:var(--dark)}.button.light:not(:disabled):hover{background:#fff;color:var(--teal);box-shadow:inset 0 0 0 2px var(--brand-hover)}.header .nav-order:hover{background:var(--brand-hover);color:var(--dark)}}
+.button:not(:disabled):active{background:var(--brand-active)}
+.button.orange:not(:disabled):active{background:var(--accent-active)}
+.hero:after{background:linear-gradient(90deg,#005f9170,#005f9125 55%,transparent)}
+.hero h1{letter-spacing:-.035em}.hero h1 em{color:#fff}
+.hero p{color:#fff}.hero .button.light{background:#fff;color:var(--teal)}
+.moods{background:#fff}
+.mood-card{box-shadow:0 6px 18px #005f9112}
+.mood-card,.mood-card.social,.mood-card.chill,.mood-card.energy{background:#fff;color:var(--teal);border:1px solid var(--line)}
+.mood-card>.media{opacity:1}
+.mood-card:after,.mood-card.social:after,.mood-card.chill:after,.mood-card.energy:after{background:linear-gradient(transparent 35%,#ffffffd9 60%,#fff 70%)}
+.mood-card p{opacity:1;color:var(--muted)}
+.mood-card small{background:#fff;box-shadow:inset 0 0 0 1px var(--line)}
+.menu-preview{background:var(--teal);color:#fff}
+.menu-banner{background:transparent;border-color:transparent;color:#fff}
+.menu-banner em{color:#fff}
+.menu-preview .tabs button{color:#fff;border-color:#ffffff80;background:transparent}
+.menu-preview .tabs button.active{background:var(--orange);color:#fff;border-color:var(--orange)}
+.product{border-color:var(--line);box-shadow:0 5px 16px #005f9112}
+.product .price{color:var(--orange)}
+.product .tag{color:var(--teal);background:#fff;font-family:var(--sans);font-weight:600}
+.product h3{font-family:var(--sans)}
+.product p{color:var(--muted)}
+.footer{background:var(--teal);color:#fff}
+.brand-signature{font-family:'Mochibop Bold',Montserrat,sans-serif;font-size:14px;font-weight:700;display:block;margin-top:12px}
+/* Los iconos y botones conservan sus ubicaciones. */
+.brand-action-icon{display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;width:21px;height:21px;color:inherit}
+.brand-action-icon svg{display:block;width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.mood-icon svg{width:30px;height:30px;fill:none;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.hamburger{border-radius:8px;background:var(--teal);color:#fff}
+.info-icon{color:var(--teal)}
+/* Textura ligera y adornos de la propuesta aprobada. */
+.menu-preview,.delivery,.footer{background-image:url('../assets/textura-mood.svg'),radial-gradient(ellipse at 40% 0%,#ffffff06,transparent 70%);background-size:160px 160px,100% 100%}
+.menu-preview,.moods{position:relative;isolation:isolate}
+.menu-preview:before,.menu-preview:after,.moods:before{content:'';position:absolute;width:70px;height:48px;background:url('../assets/grano-mood.svg') center/contain no-repeat;pointer-events:none;z-index:-1;opacity:.8}
+.menu-preview:before{top:25px;left:22px}
+.menu-preview:after{bottom:20px;right:24px;transform:rotate(12deg)}
+.moods:before{top:24px;left:22px;opacity:.45;filter:brightness(.65) sepia(1) saturate(4) hue-rotate(160deg)}
+@media(max-width:760px){.menu-preview:before,.menu-preview:after,.moods:before{width:38px;height:28px;opacity:.45}.menu-preview:before,.moods:before{left:8px;top:12px}.menu-preview:after{right:8px;bottom:10px}}
+/* Acercar los componentes a la propuesta, sin cambiar el orden de la página. */
+.mood-card{padding:20px;justify-content:flex-end}
+.mood-card>.media{inset:10px 10px auto;width:calc(100% - 20px);height:54%;border-radius:14px;overflow:hidden}
+.mood-card:after,.mood-card.social:after,.mood-card.chill:after,.mood-card.energy:after{display:none}
+.mood-card .mood-icon{top:auto;bottom:calc(46% - 44px);left:20px;background:#fff;border-radius:8px;line-height:1;padding:4px}
+.mood-card h3{font-size:clamp(22px,2vw,28px);margin:0 0 8px}
+.mood-card p{margin-bottom:12px;font-size:13px}
+.mood-card small{border-radius:7px;max-width:100%;white-space:normal}
+.menu-preview .product{border:0;box-shadow:0 8px 20px #003f6120}
+.menu-preview .product-image{margin:10px 10px 0;border-radius:12px;height:198px}
+.menu-preview .product-body{padding:12px 16px 16px}
+.menu-preview .product h3{font-weight:700}
+.menu-preview .product .add{border-radius:8px}
+.menu-preview .center .button{background:transparent;color:#fff;box-shadow:inset 0 0 0 2px #fff;border-radius:10px}
+.menu-preview .tabs button{border:2px solid #ffffffbd;border-radius:9px}
+.menu-preview .tabs button.active{border-color:var(--orange)}
+.menu-banner{font-size:clamp(28px,3vw,44px);font-style:normal;letter-spacing:-.035em}
+.footer p,.footer a,.footer-bottom,.footer-bottom span{color:#fff}
+.footer .social-links a{color:#fff;box-shadow:inset 0 0 0 1px #ffffff70}
+.info-icon{background:var(--teal);color:#fff}
+.info-icon svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+@media(max-width:760px){.mood-card{padding:17px}.mood-card>.media{height:48%}.mood-card .mood-icon{bottom:calc(52% - 37px);left:17px}.mood-card h3{font-size:23px}.mood-card p{font-size:12px}.mood-card small{font-size:9px;padding:5px 7px}.menu-preview .product-image{height:auto;aspect-ratio:2/1}.menu-preview .product-body{padding:14px}.menu-banner{font-size:29px}}
+
+/* MOOD · Texto introductorio legible en «¿Cuál es tu mood hoy?».
+   Abarca el ancho disponible bajo el título, con un tamaño comparable
+   al texto conceptual de otras secciones. No modifica las tarjetas. */
+.moods .section-heading{
+  display:block;
+  margin-bottom:22px;
+}
+.moods .section-heading p{
+  width:100%;
+  max-width:1020px;
+  margin:16px 0 0;
+  font-size:18px;
+  font-weight:500;
+  line-height:1.6;
+  color:#38576c;
+  text-wrap:pretty;
+}
+@media(max-width:760px){
+  .moods .section-heading{margin-bottom:24px}
+  .moods .section-heading p{
+    max-width:100%;
+    margin-top:14px;
+    font-size:16px;
+    line-height:1.6;
+  }
+}
+
+/* Identidad secundaria horizontal de MOOD: exclusivamente para el pie de página. */
+.footer .footer-brand{display:block;width:214px;height:auto;max-width:100%;margin-bottom:18px}
+.footer .footer-brand img{display:block;width:100%;height:auto;max-width:100%;object-fit:contain;background:transparent}
+@media (max-width:600px){.footer .footer-brand{width:200px}}

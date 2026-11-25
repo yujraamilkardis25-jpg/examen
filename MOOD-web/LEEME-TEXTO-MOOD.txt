@@ -1,0 +1,6 @@
+AJUSTE DE ENCABEZADO EN «¿CUÁL ES TU MOOD HOY?»
+
+El texto «MOOD se adapta a ti. Cada visita es diferente — aquí siempre encuentras tu espacio ideal.» ahora aparece debajo del título, alineado con él, y deja de ocupar la columna de la derecha.
+
+La modificación está solo en sistema/marca.css (reglas .moods .section-heading).
+No se cambiaron los textos originales, tarjetas, rutas, imágenes ni funciones del carrito o de los pedidos.

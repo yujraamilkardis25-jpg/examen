@@ -1,0 +1,3 @@
+Se ajustaron las tarjetas para acercarlas a la propuesta: fotos con bordes interiores, sin degradado sobre las imágenes, tarjetas blancas, botón secundario delineado sobre azul y mejor contraste del pie.
+Incluye textura de grano sutil en fondos azules y granos de café decorativos discretos en esquinas. Son SVG locales muy pequeños, sin imágenes pesadas ni dependencias externas.
+Los pedidos, caja, WhatsApp, SQL y fotografías se conservan. No necesitas ejecutar SQL. Reemplaza los archivos y recarga con Ctrl+F5.

@@ -1,0 +1,2 @@
+Ejecuta supabase/06-ORDENAR-HISTORIAL.sql en SQL Editor después de tener instalada la actualización 05. Reemplaza los archivos de la web y recarga con Ctrl+F5.
+El historial se ordena del movimiento más reciente al más antiguo. Recojos: hora de entrega. Delivery manual: fecha declarada y hora de registro en Bolivia. No modifica importes ni duplica ventas.

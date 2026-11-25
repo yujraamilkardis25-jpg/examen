@@ -1,0 +1,12 @@
+﻿ID;Producto;Precio propuesto (Bs);Máx costo directo para margen bruto 65% (Bs);Referencias públicas;Nota
+espresso;Espresso Doble;14;4,90;"Caffinos 12; Tercer Espacio 18; Oye Café 18";café doble
+latte;Latte de Vainilla;19;6,65;"Caffinos 20; Café Ciudad 18; Tercer Espacio 25";latte vainilla
+cortado;Cortado Ahumado;13;4,55;"La La Latte (cortado) 10; Cofi 12; Tercer Espacio 15";cortado base, no idéntico al ahumado
+cold;Cold Brew;17;5,95;"La La Latte 15; Cofi 15; Tercer Espacio 25";cold brew
+matcha;Matcha Latte;23;8,05;"Cofi 12; Oye Café 24; Tercer Espacio 25";"matcha latte; calidad e ingredientes pueden diferir"
+limonada;Limonada Menta;12;4,20;"La La Latte (limonada) 10; Oye Café (limonada fresca) 13; Tercer Espacio (limonada) 16";"limonada base; menta adicional"
+mocha;Mocha Naranja;21;7,35;"La La Latte (mocha) 15; Oye Café (mokaccino) 23; Tercer Espacio (mokaccino) 25";"mocha base; naranja adicional"
+te;Té de la casa;8;2,80;"La La Latte (té negro) 6; Café Ciudad (té/mate) 7; Tercer Espacio (té clásico) 10";té base
+avo;Avo Toast;21;7,35;"Oye Café (tostada con palta) 22; Oye Café (con tocino) 32";tostada con palta base
+granola;Granola Bowl;20;7,00;Oye Café (granola bowl con yogur griego y frutos secos) 25;"bowl de granola; porciones e ingredientes varían"
+postre;Postre del día;16;5,60;"La La Latte (porción de postre) 18; Café Ciudad (porción de torta) 18; Tercer Espacio (torta) 18–25";postre rotativo de temporada

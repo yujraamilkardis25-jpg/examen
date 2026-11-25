@@ -1,0 +1,12 @@
+MEJORA DEL CARRITO MOOD · 10/11/2026
+
+- En computadora: botón azul con icono de carrito y texto «Mi pedido».
+- Al pasar el cursor: cambia a naranja y flota suavemente.
+- Al añadir productos: rebota el icono y se actualiza la insignia con la cantidad.
+- En tablet y celular: se mantiene solamente el icono grande y el contador.
+- El carrito sigue llevando a #carrito, con la lógica de pedidos sin cambios.
+
+Archivos nuevos: sistema/carrito.css, sistema/carrito.js.
+Archivo modificado: index.html.
+Para editar el aspecto del carrito, modificar sistema/carrito.css.
+Para verlo actualizado en el navegador: Ctrl + F5.

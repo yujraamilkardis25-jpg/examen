@@ -1,0 +1,3 @@
+Reemplaza los archivos de la web y recarga con Ctrl+F5. No requiere SQL.
+La navegación entre secciones usa desplazamiento suave. Las secciones aparecen con una transición ligera de 480 ms y 14 px. La rueda, el teclado y el tacto mantienen su funcionamiento natural. Se respeta la preferencia del dispositivo de reducir movimiento.
+Los ajustes están en sistema/movimiento.js y sistema/movimiento.css. El resto de las funciones de la web se conserva.

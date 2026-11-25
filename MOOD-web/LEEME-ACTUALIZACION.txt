@@ -1,0 +1,4 @@
+1. Sustituye los archivos de tu web por los de este ZIP.
+2. En Supabase SQL Editor ejecuta solo supabase/02-ACTUALIZAR-RECOJO.sql. No repitas el archivo 01 en un proyecto existente.
+3. Recarga la web con Ctrl+F5.
+El plazo de recojo es de 10 minutos desde la hora estimada o programada. Al vencer, el estado sigue Aceptado. MOOD resuelve manualmente.

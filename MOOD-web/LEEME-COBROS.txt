@@ -1,0 +1,6 @@
+ACTUALIZACIÓN 05
+Reemplaza los archivos de la web. En Supabase SQL Editor copia y ejecuta TODO supabase/05-COBROS-Y-DELIVERY-MANUAL.sql. Incluye las funciones de los SQL 02, 03 y 04; no repitas estos después del 05 ni ejecutes 01 en una base existente. Recarga panel y cliente con Ctrl+F5.
+Al entregar un recojo usa Confirmar cobro y entrega después de recibir el dinero. Los pedidos entregados antes de esta actualización cuentan por la fecha del evento de entrega conservado en el historial.
+Ventas e historial permite elegir fecha de Bolivia. Total cobrado incluye recojos entregados y delivery manual cobrado, incluido envío; no son ganancias. Por cobrar muestra TODOS los recojos aceptados aún abiertos, sin filtrar por fecha.
+Registra delivery solo cuando ya esté entregado y cobrado por WhatsApp. Indica fecha, cliente, referencia, detalle y total completo. Cada guardado representa una venta: no registres dos veces el mismo chat. Si te equivocas, Anular registro conserva el motivo y descuenta ese importe; registra después el dato correcto.
+No envía mensajes automáticos. Los pedidos delivery siguen por WhatsApp, y solo los recojos usan el panel operativo.

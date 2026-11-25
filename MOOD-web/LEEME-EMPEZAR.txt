@@ -1,0 +1,72 @@
+MOOD · SUPABASE + LIVE SERVER + GITHUB PAGES
+
+Esta versión NO necesita Node.js, npm, archivos .bat ni una computadora encendida como servidor.
+La clave pública y la dirección de tu proyecto ya están configuradas en EDITAR-SUPABASE.js.
+
+PASO 1. CREAR TABLAS Y PERMISOS (UNA VEZ)
+1. En tu proyecto mood-pedidos de Supabase, abre SQL Editor (icono >_).
+2. Pulsa New query.
+3. Abre supabase/01-CONFIGURAR-MOOD.sql en VS Code o un editor de texto.
+4. Copia TODO su contenido, pégalo en SQL Editor y pulsa Run.
+5. Debe terminar sin errores. Puedes volver a ejecutar el mismo archivo: no elimina pedidos ni cuentas.
+El archivo crea catálogo, pedidos, validación de precios/cobertura/horarios y acceso por cliente o administrador. No contiene ni crea contraseñas.
+
+PASO 2. PREPARAR EL USUARIO ADMINISTRADOR
+En Supabase, abre Authentication > Users > Add user > Create new user (los nombres pueden variar).
+Correo: yujraamilkar.dis25@tecba.edu.bo
+Introduce tú la contraseña que quieres utilizar. Puedes usar la que elegiste para tu panel, pero no se incluyó en los archivos de la web.
+Si estás creando manualmente tu propia cuenta, confirma el usuario mediante Auto Confirm User. Si ya existe, verifica su estado de confirmación en lugar de crear un duplicado.
+La lista de administradores del archivo SQL reconoce exclusivamente ese correo confirmado. Elegir un rol en el navegador o en user_metadata no concede permisos de administrador.
+No necesitas iniciar sesión en tu bandeja institucional para usar el panel: es una cuenta de Supabase Auth. Para registros normales que requieren confirmar correo, sí se debe poder recibir el mensaje.
+
+PASO 3. ABRIR LA WEB CON LIVE SERVER
+1. Descomprime toda la carpeta MOOD-web.
+2. En VS Code abre la carpeta completa.
+3. Abre comprobar.html con Live Server y pulsa Comprobar conexión.
+4. Si indica conexión correcta y tablas listas, abre index.html con Live Server.
+5. Para el panel abre admin.html con Live Server e ingresa con el usuario del paso 2.
+No abras los HTML con doble clic (file://). No uses los .bat ni el servidor de la versión anterior.
+
+PASO 4. CONFIGURAR LOS CORREOS DE CONFIRMACIÓN
+Tu proyecto tenía activada la confirmación de correo al preparar esta entrega. La web respeta esa opción: si Supabase requiere confirmación, avisa al cliente y NO afirma haber enviado un pedido.
+En Authentication > URL Configuration configura la dirección local que aparece en Live Server, por ejemplo http://127.0.0.1:5500, como Site URL durante las pruebas.
+Añade a Redirect URLs la dirección EXACTA del index.html local, incluida la carpeta si existe. Ejemplos:
+http://127.0.0.1:5500/index.html
+http://localhost:5500/index.html
+Cuando publiques, añade también la URL completa de tu GitHub Pages y su index.html. Conserva las direcciones locales si seguirás probando.
+Para probar sin esperar un registro por correo puedes crear usuarios de prueba confirmados desde Authentication > Users, igual que el administrador. No uses datos reales de clientes para las pruebas.
+El correo incorporado de Supabase tiene límites. Para una tienda pública que verifique muchos correos, configura el servicio SMTP antes de abrirla a clientes.
+
+PASO 5. PRUEBA COMPLETA
+- Ingresa a la tienda con una cuenta de cliente de prueba.
+- Agrega un producto y elige delivery o recojo.
+- Completa los datos y pulsa Enviar pedido.
+- La orden se guarda en Supabase; recibirás código corto y seguimiento.
+- En OTRO navegador, o una ventana privada, entra a admin.html con la cuenta administrativa. No uses la misma sesión para dos personas.
+- Pulsa Activar avisos. Acepta el pedido e indica el tiempo estimado.
+- Cambia a En preparación, Listo para recoger / En camino y Entregado.
+- El cliente debe ver cada cambio en un plazo aproximado de 5 segundos con conexión.
+Las cuentas y los pedidos se comparten entre dispositivos; el carrito sigue guardado en el navegador que utiliza el cliente.
+El panel muestra hasta 500 pedidos recientes y cada cliente hasta 100 propios.
+
+PASO 6. PUBLICAR DESPUÉS EN GITHUB PAGES
+Sube los archivos de esta versión a tu repositorio y habilita GitHub Pages desde la carpeta donde está index.html. No hay que compilar nada.
+Abre admin.html desde la misma dirección publicada; en GitHub Pages no se usa la ruta /admin del servidor anterior.
+El archivo .nojekyll permite publicar los archivos estáticos directamente.
+No subas archivos de contraseñas, claves secretas ni el antiguo servidor. Este ZIP no los contiene.
+
+QUÉ PUEDES EDITAR
+EDITAR-IMAGENES.js: imágenes, logo y videos.
+EDITAR-DISENO.css: colores, fuentes y tamaños.
+EDITAR-SUPABASE.js: URL y clave pública del proyecto.
+El catálogo de Supabase es la fuente de precios. Puedes editar nombre, price_cents y active en Table Editor > mood_products. price_cents son centavos: 1280 equivale a Bs 12,80.
+La web conserva imágenes y demás información visual de los productos del catálogo original. Un producto nuevo requiere también su ficha visual en sistema/contenido.min.js.
+La ubicación y los horarios se configuran inicialmente con los mismos valores de la entrega anterior. Para cambiarlos de forma consistente, actualiza EDITAR-DELIVERY.js / EDITAR-PEDIDOS.js y la configuración equivalente del archivo SQL, y vuelve a ejecutarlo. El servidor de Supabase siempre valida los valores guardados en su base de datos.
+Volver a ejecutar el archivo SQL vuelve a aplicar SUS precios y configuración inicial. No lo reapliques sin actualizar sus valores si ya cambiaste precios desde Table Editor.
+
+QUÉ NO HACE ESTA VERSIÓN
+No procesa pagos en línea, no emite facturas fiscales y no envía pedidos por WhatsApp. El pago es en efectivo y la factura es una solicitud opcional.
+Los avisos sonoros funcionan mientras tengas abierto el panel y hayas activado el sonido. No son notificaciones push con el navegador cerrado.
+Las cuentas y pedidos de las versiones anteriores NO se migran automáticamente a Supabase.
+Las funciones de recuperación por correo no están conectadas en la interfaz. La interfaz lo informa; no dice que haya enviado un correo.
+Si Supabase o Internet no están disponibles, el envío muestra un error y conserva el carrito. Solo se vacía después de la confirmación de guardado.

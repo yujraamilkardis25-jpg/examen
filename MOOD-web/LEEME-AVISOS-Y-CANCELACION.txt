@@ -1,0 +1,2 @@
+Reemplaza los archivos de la web y ejecuta solo supabase/04-CANCELAR-RECOJO-VENCIDO.sql en SQL Editor. Incluye la función de Pedido listo de la actualización 03. No repitas los archivos anteriores después del 04. Recarga cliente y panel con Ctrl+F5.
+La cancelación es manual: al vencer el plazo se habilita Cancelar por falta de recojo. Confirma que el cliente no llegó ni avisó antes de usarlo. Puede mantenerse Aceptado y entregarse si MOOD lo decide. El cliente ve la cancelación en la web; no se envían mensajes externos.

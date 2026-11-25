@@ -1,0 +1,4 @@
+Reemplaza los archivos y recarga con Ctrl+F5. No requiere SQL.
+Fotos: Push (empiezan ligeramente ampliadas y se alejan suavemente dentro del marco al interactuar, sin giro). Botones: Float (suben 6 px). Tarjetas de productos y ambientes: elevación y sombra. En celular responden durante la pulsación; la galería conserva su apertura normal.
+No aplica a logos, mapa, foto de portada o administrador. Respeta la preferencia de reducir movimiento.
+Puedes ajustar intensidad al inicio de sistema/interacciones.css: --foto-zoom y --float-altura. No añade librerías externas ni imágenes nuevas.

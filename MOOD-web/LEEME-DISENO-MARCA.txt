@@ -1,0 +1,6 @@
+Diseño blanco y azul aplicado conservando la estructura, fotos, medidas de contenedores y orden de secciones.
+Montserrat real incluida localmente en assets/fonts (regular, semibold y bold), sin depender de Google al abrir la página. Paleta principal #005F91 / #FA783C / #FFFFFF y estados de la guía. Iconos reproducidos en SVG a partir de la referencia visual. Para usar los trazos originales exactos, reemplazar por los SVG exportados de Illustrator.
+Botón superior Pedir ahora sin flecha. Se conservan pedidos, caja, WhatsApp y efectos Push/Float.
+Mochibop Bold incluida desde el archivo proporcionado: se usa solo en la firma pequeña del pie «A tu ritmo, a tu mood.». Títulos, productos, botones y textos conservan Montserrat.
+Personalización: EDITAR-DISENO.css para colores; sistema/marca.css para detalles visuales; sistema/marca.js para iconos.
+Reemplaza archivos y recarga con Ctrl+F5. No ejecutes SQL por este cambio.

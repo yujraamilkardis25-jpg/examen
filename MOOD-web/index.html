@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <!-- PERSONALIZA EN EDITAR-IMAGENES.js Y EDITAR-DISENO.css -->
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#196d76"><meta name="description" content="MOOD: cafetería, cowork y brunch. Cada café cambia tu mood.">
+  <title>MOOD — Cada café cambia tu mood</title>
+  <link rel="icon" href="assets/logo.webp"><link rel="stylesheet" href="sistema/fonts.min.css">
+  <link rel="stylesheet" href="sistema/styles.min.css">
+  <link rel="stylesheet" href="EDITAR-DISENO.css">
+  <link rel="stylesheet" href="sistema/vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="sistema/delivery.css">
+  <link rel="stylesheet" href="sistema/pedidos.css">
+  <script defer src="EDITAR-IMAGENES.js"></script>
+  <script defer src="sistema/contenido.min.js"></script>
+  <script defer src="EDITAR-SUPABASE.js"></script><script defer src="sistema/cuentas.js"></script>
+  <script defer src="sistema/movimiento.js"></script>
+  <script defer src="sistema/app.min.js"></script>
+  <script defer src="EDITAR-DELIVERY.js"></script>
+  <script defer src="sistema/delivery.js"></script>
+  <script defer src="EDITAR-PEDIDOS.js"></script>
+  <script defer src="sistema/recojo.js"></script>
+  <script defer src="sistema/pedidos.js"></script>
+  <script defer src="sistema/seguimiento.js"></script>
+<link rel="stylesheet" href="sistema/panel.css">
+<link rel="stylesheet" href="sistema/movimiento.css">
+<link rel="stylesheet" href="sistema/interacciones.css">
+<link rel="stylesheet" href="sistema/marca.css">
+<link rel="stylesheet" href="sistema/carrito.css">
+<script defer src="sistema/marca.js"></script>
+<script defer src="sistema/carrito.js"></script>
+<link rel="stylesheet" href="sistema/ver-contrasena.css">
+<script defer src="sistema/ver-contrasena.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Saltar al contenido</a>
+  <header class="header"><div class="nav-wrap">
+    <a class="brand" href="#inicio" aria-label="MOOD, inicio"><img data-media="logo" src="assets/logo.webp" alt="MOOD Cafetería"></a>
+    <nav id="navigation" aria-label="Navegación principal"><a href="#inicio">Inicio</a><a href="#menu">Menú</a><a href="#cowork">Cowork</a><a href="#delivery">Delivery</a><a href="#ubicacion">Ubicación</a><a href="#mis-pedidos">Historial</a></nav>
+    <div class="nav-actions"><a class="icon-button bag" href="#carrito" aria-label="Ver mi pedido, sin productos" title="Abrir mi pedido"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2 3h2l2.1 10.4a2 2 0 0 0 2 1.6h10.1a2 2 0 0 0 2-1.6L22 7H5"/><circle cx="9" cy="20" r="1.5"/><circle cx="19" cy="20" r="1.5"/></svg><strong class="cart-label" aria-hidden="true">Mi pedido</strong><span id="cart-count" aria-hidden="true" hidden>0</span></a><button class="icon-button" data-action="login" aria-label="Abrir mi cuenta"><svg viewBox="0 0 24 24"><circle cx="12" cy="7" r="4"/><path d="M4 22v-3c0-7 16-7 16 0v3"/></svg></button><button class="icon-button hamburger" aria-label="Abrir menú" aria-controls="navigation" aria-expanded="false" data-action="nav">☰</button></div>
+  </div></header>
+  <main id="main" tabindex="-1"></main>
+  <dialog id="modal"><button class="close" data-action="close" aria-label="Cerrar">×</button><div id="modal-content"></div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <noscript>Activa JavaScript para explorar el menú y preparar tu pedido por WhatsApp.</noscript>
+</body>
+</html>

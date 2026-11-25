@@ -1,0 +1,24 @@
+/* Efectos MOOD: ajustar aquí intensidad y duración. */
+:root{--foto-zoom:1.1;--float-altura:-6px;--tarjeta-sombra:0 16px 32px -12px #102c3340}
+:is(.product-image,.gallery button,.collage .media){overflow:hidden}
+:is(.product-image,.gallery button,.collage .media,.mood-card) img{transform:scale(var(--foto-zoom));transition:transform .5s cubic-bezier(.4,0,.2,1);transform-origin:center}
+.gallery button .media{transform:none!important}
+:is(.product,.mood-card){transition:transform .25s ease,box-shadow .25s ease}
+.button{transition:transform .25s ease,box-shadow .25s ease,filter .25s ease}
+@media(hover:hover) and (pointer:fine){
+ :is(.product-image,.gallery button,.collage .media,.mood-card):hover img{transform:scale(1)}
+ :is(.product,.mood-card):hover{transform:translateY(var(--float-altura));box-shadow:var(--tarjeta-sombra)}
+ .button:not(:disabled):hover{transform:translateY(var(--float-altura))}
+}
+.gallery button:focus-visible img,.mood-card:focus-visible img{transform:scale(1)}
+.mood-card:focus-visible{transform:translateY(var(--float-altura));box-shadow:var(--tarjeta-sombra)}
+.button:not(:disabled):focus-visible{transform:translateY(var(--float-altura))}
+@media(hover:none){
+ :is(.product-image,.gallery button,.collage .media,.mood-card):active img{transform:scale(1)}
+ :is(.product,.mood-card):active{transform:translateY(-3px);box-shadow:var(--tarjeta-sombra)}
+ .button:not(:disabled):active{transform:translateY(-3px)}
+}
+@media(prefers-reduced-motion:reduce){
+ :is(.product-image,.gallery button,.collage .media,.mood-card) img,.button,.product,.mood-card{transition:none!important;transform:none!important}
+ :is(.product-image,.gallery button,.collage .media,.mood-card):is(:hover,:active,:focus-visible) img,.button:is(:hover,:active,:focus-visible),:is(.product,.mood-card):is(:hover,:active,:focus-visible){transform:none!important}
+}

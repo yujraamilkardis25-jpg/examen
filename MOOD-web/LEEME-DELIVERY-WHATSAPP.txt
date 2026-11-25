@@ -1,0 +1,4 @@
+Reemplaza los archivos de tu web y recarga con Ctrl+F5. Esta actualización no requiere ejecutar SQL adicional.
+Delivery: completa datos y ubicación, pulsa Revisar pedido y comprueba el resumen. Después pulsa Continuar por WhatsApp y envía el mensaje preparado a MOOD. No crea pedidos en el panel ni vacía el carrito al abrir WhatsApp.
+El registro sigue siendo obligatorio.
+El panel muestra solo recojos. Los delivery anteriores se conservan en la base de datos, sin aparecer en el panel.

@@ -1,0 +1,65 @@
+/* MOOD | Mostrar / ocultar contraseña (cuenta y pedidos). */
+.mood-password-control {
+  position: relative;
+  min-width: 0;
+}
+.mood-password-control > label {
+  display: block;
+  margin-bottom: 0;
+}
+.auth .mood-password-control {
+  margin-bottom: 16px;
+}
+.auth .mood-password-control > label {
+  margin-bottom: 0;
+}
+.admin-page .mood-password-control {
+  margin: 12px 0;
+}
+.admin-page .mood-password-control > label {
+  margin: 0;
+}
+.mood-password-control input.mood-password-input {
+  padding-right: 56px !important;
+}
+.mood-password-toggle {
+  position: absolute;
+  right: 5px;
+  bottom: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--teal, #005e91);
+  cursor: pointer;
+  z-index: 1;
+  transition: background-color 160ms ease, color 160ms ease;
+}
+.mood-password-toggle:hover {
+  background: rgba(0, 94, 145, .09);
+}
+.mood-password-toggle:focus-visible {
+  outline: 2px solid var(--teal, #005e91);
+  outline-offset: 1px;
+}
+.mood-password-toggle svg {
+  width: 21px;
+  height: 21px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.9;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+.mood-password-toggle .mood-eye-slash { display: none; }
+.mood-password-toggle[aria-pressed="true"] .mood-eye-open { display: none; }
+.mood-password-toggle[aria-pressed="true"] .mood-eye-slash { display: block; }
+@media (prefers-reduced-motion: reduce) {
+  .mood-password-toggle { transition: none; }
+}

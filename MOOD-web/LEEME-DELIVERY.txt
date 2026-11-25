@@ -1,0 +1,7 @@
+DELIVERY MOOD
+Ubicación: Calle José Pol y Sucre, Cochabamba, Bolivia.
+Radio inicial: 2000 metros. Tarifa inicial conservada: Bs 10.
+El cliente marca y confirma su ubicación. Supabase vuelve a validar la cobertura antes de guardar.
+La ubicación queda disponible únicamente para el cliente propietario del pedido y el administrador.
+Las imágenes del mapa requieren conexión a OpenStreetMap. La configuración visual está en EDITAR-DELIVERY.js y la validación en Supabase se configura mediante el archivo SQL.
+Los pedidos llegan al panel; WhatsApp es un contacto opcional. Consulta LEEME-EMPEZAR.txt.

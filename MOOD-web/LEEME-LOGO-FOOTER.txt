@@ -1,0 +1,6 @@
+LOGO SECUNDARIO BLANCO EN FOOTER — MOOD
+
+Se reemplazó exclusivamente el logo del pie de página.
+La imagen es assets/logo-footer-blanco.png y se obtuvo de la versión horizontal proporcionada para el footer.
+La cabecera, navegación, cuentas, pedidos y Supabase no se modificaron.
+Para cambiar el tamaño, edita las reglas .footer .footer-brand al final de sistema/marca.css.

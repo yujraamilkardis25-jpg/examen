@@ -1,0 +1,3 @@
+El cierre de compra se muestra al marcar Entregado tanto en recojo inmediato como programado. Incluye Hacer otro pedido y Ver mis pedidos, sin redirección automática. Conserva la compra en el historial.
+Reemplaza los archivos y recarga con Ctrl+F5. Este cierre no requiere SQL nuevo.
+Si todavía no aplicaste la última actualización del orden del historial, ejecuta supabase/06-ORDENAR-HISTORIAL.sql. Si ya la aplicaste, no necesitas repetirla.

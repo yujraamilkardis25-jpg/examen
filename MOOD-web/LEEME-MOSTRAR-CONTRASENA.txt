@@ -1,0 +1,15 @@
+MOOD — BOTÓN MOSTRAR / OCULTAR CONTRASEÑA
+
+Base: MOOD-web-texto-legible-responsive(1).zip (la versión elegida por el usuario).
+
+Se agregó un botón con icono de ojo a los campos de contraseña en:
+- Inicio de sesión de clientes.
+- Registro de clientes.
+- Creación de cuenta o acceso al realizar un pedido (delivery o recojo).
+- Acceso al panel de administración.
+
+Al pulsarlo, muestra u oculta lo escrito sin borrar el contenido.
+No modifica los datos de registro, las validaciones, los pedidos ni la configuración de Supabase.
+
+Archivos nuevos: sistema/ver-contrasena.js y sistema/ver-contrasena.css.
+Archivos que referencian esos recursos: index.html y admin.html.

@@ -1,0 +1,18 @@
+MOOD — NAVEGACIÓN Y PORTADA ACTUALIZADAS
+
+VERSIÓN BASE: MOOD-web-navegacion-clara.zip
+
+CAMBIOS VISIBLES
+1. Barra de navegación: Inicio · Menú · Cowork · Delivery · Ubicación · Historial.
+2. Se eliminó el botón naranja duplicado «Ver menú» del encabezado.
+3. El acceso azul del carrito ahora muestra «Mi pedido», con su contador y animación.
+4. En portada: «Ver menú» abre el catálogo (#menu) y «Conócenos» baja hasta «¿Cuál es tu MOOD hoy?» (#ambientes).
+5. La sección «Mi pedido» y enlaces de retorno usan ese mismo nombre.
+6. «Historial» sigue reservado para pedidos anteriores.
+
+RUTAS Y FUNCIONALIDAD SIN CAMBIOS
+- #menu: catálogo; #ambientes: sección de ambientes; #carrito: pedido actual; #mis-pedidos: historial.
+- Continúan la lógica de productos, el almacenamiento local del pedido y Supabase.
+- La cabecera y las versiones responsive conservan sus estilos, con ajuste de scroll para el título de ambientes.
+
+Archivos modificados: index.html, sistema/app.min.js, sistema/carrito.js, sistema/carrito.css, sistema/pedidos.js.

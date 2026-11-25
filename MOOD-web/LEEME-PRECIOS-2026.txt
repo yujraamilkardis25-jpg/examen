@@ -1,0 +1,26 @@
+ACTUALIZACIÓN DE PRECIOS MOOD — 11 DE NOVIEMBRE DE 2026
+
+1. La web incluye los 11 nuevos precios en sistema/contenido.min.js.
+2. IMPORTANTE: Los precios de tu Supabase tienen prioridad mientras la conexión funciona.
+3. Abre Supabase > proyecto MOOD > SQL Editor > New query.
+4. Copia el contenido de supabase/07-ACTUALIZAR-PRECIOS-NOVIEMBRE-2026.sql y pulsa Run.
+5. Comprueba que se listan 11 productos con los nuevos precios.
+6. Recarga MOOD con Ctrl+F5; abre Menú, agrega producto a Mi pedido y revisa Total.
+7. No ejecutes de nuevo 01-CONFIGURAR-MOOD.sql para actualizar solo los precios.
+8. Si falta alguno de los 11 productos, el SQL se detiene sin aplicar cambios.
+9. No se modifican tarifas de delivery, permisos, usuarios, pedidos anteriores ni ubicación.
+
+PRECIOS (Bs):
+- Espresso Doble: 14
+- Latte de Vainilla: 19
+- Cortado Ahumado: 13
+- Cold Brew: 17
+- Matcha Latte: 23
+- Limonada Menta: 12
+- Mocha Naranja: 21
+- Té de la casa: 8
+- Avo Toast: 21
+- Granola Bowl: 20
+- Postre del día: 16
+
+Estos precios son propuestas, no garantías de ganancia. Lee INFORME-PRECIOS-MOOD-2026.md.

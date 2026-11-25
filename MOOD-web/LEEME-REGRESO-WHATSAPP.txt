@@ -1,0 +1,2 @@
+Reemplaza los archivos y recarga con Ctrl+F5. No requiere SQL nuevo.
+Al volver de WhatsApp se muestra Ya envié mi pedido · vaciar carrito o Volver a mi pedido. El carrito solo se vacía cuando el cliente lo confirma. Si cambió mientras tanto, se conserva para proteger una compra nueva. El aviso se recuerda en la misma pestaña y sesión. No verifica si el mensaje se envió ni confirma entrega o cobro en el administrador.

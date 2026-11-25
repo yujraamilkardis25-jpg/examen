@@ -1,0 +1,12 @@
+MOOD - NAVEGACIÓN CLARA
+
+El encabezado presenta tres acciones diferentes:
+- Historial: consulta los pedidos anteriores (requiere iniciar sesión).
+- Mi carrito: revisa los productos seleccionados y continúa al checkout.
+- Ver menú: abre el catálogo para elegir productos.
+
+Se eliminó "Menú" de los enlaces centrales porque "Ver menú" ya cumple esa función.
+Se conservaron las rutas internas #mis-pedidos, #carrito y #menu, la lógica de pedidos, Supabase y los estilos adaptables a móvil.
+Se ajustaron los títulos del historial, la pantalla de carrito y algunos enlaces de cuenta y seguimiento para que sus nombres sean coherentes.
+
+Cambios: index.html, sistema/app.min.js, sistema/seguimiento.js, sistema/carrito.css, sistema/carrito.js y sistema/pedidos.js.

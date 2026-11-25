@@ -1,0 +1,38 @@
+/* EDITA SOLO ESTE ARCHIVO PARA CAMBIAR COLORES Y TIPOGRAFÍAS.
+   Guarda con Ctrl + S y actualiza el navegador con Ctrl + F5. */
+
+:root {
+  /* COLORES PRINCIPALES · guía visual aprobada */
+  --brand-hover:#8CAACD;
+  --accent-hover:#E6B482;
+  --brand-active:#00A0FF;
+  --accent-active:#FF9600;
+  --disabled:#969696;
+  --teal:    #005F91; /* Principal: botones, enlaces y fondos */
+  --orange:  #FA783C; /* Acento: botones de compra y detalles */
+  --cream:   #FFFFFF; /* Fondo de la página */
+  --dark:    #005F91; /* Texto oscuro y secciones oscuras */
+  --pale:    #F3F7FA; /* Fondos suaves y campos */
+  --surface: #FFFFFF; /* Tarjetas y texto sobre fondos oscuros */
+  --muted:   #456779; /* Texto secundario */
+  --line:    #DCE7ED; /* Bordes */
+  --banner:  #005F91; /* Franja «Hecho con amor» */
+  --social:  #FFFFFF; /* Tarjeta del ambiente SOCIAL */
+  --success: #51b88a; /* Confirmaciones */
+  --error:   #ac382c; /* Errores */
+
+  /* TIPOGRAFÍAS: las actuales vienen incluidas en assets/fonts/. */
+  --serif: 'Montserrat', Arial, sans-serif; /* Títulos */
+  --sans:  'Montserrat', Arial, sans-serif; /* Textos y botones */
+
+  /* TAMAÑO DEL LOGO: no necesitas buscarlo en el resto del código. */
+  --logo-width: 84px;
+  --logo-height: 58px;
+  --logo-mobile-width: 70px;
+  --logo-mobile-height: 50px;
+
+  /* FORMA Y ANCHO GENERAL */
+  --radius: 18px;
+  --width: 1280px;
+}
+

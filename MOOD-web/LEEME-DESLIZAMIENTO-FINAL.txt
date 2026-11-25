@@ -1,0 +1,4 @@
+Se reemplazó el blur de aparición por desplazamiento con inercia ligera en computadora. No transforma contenido ni añade librerías externas.
+En celular se conserva el movimiento natural del dedo. Mapas, diálogos, formularios y administrador conservan su comportamiento normal.
+Para ajustar la intensidad, edita SUAVIDAD_MS en sistema/movimiento.js (110 por defecto). Respeta la preferencia de reducir movimiento.
+Reemplaza los archivos y recarga con Ctrl+F5. No requiere SQL nuevo.
